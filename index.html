@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
     
        <div class="container">
-        
-        <div class="row ">
+        <h1>CALCOLA PREZZO BIGLIETTO</h1>
+        <div class="row calcolo-biglietto">
             <div class="col-12">
-                <label for="eta">Età passeggero</label>
-                <input type="text" id="eta" name="eta">
+                <label for="nome" class="fw-bold">Nome passeggero</label>
+                <input type="text" id="nome" name="nome" class="border-0 m-2">
             </div>
             <div class="col-12">
-                <label for="km">km da percorrere</label>
-                <input type="text" id="km" name="km">
+                <label for="eta" class="fw-bold">Età passeggero</label>
+                <input type="text" id="eta" name="eta" class="border-0 m-2">
             </div>
             <div class="col-12">
-                <button class="btn">Calcola</button> 
+                <label for="km" class="fw-bold">km da percorrere</label>
+                <input type="text" id="km" name="km" class="border-0 m-2">
+            </div>
+            <div class="col-12">
+                <button class="btn btn-light fw-bold my-3">Calcola</button> 
             </div>
         </div>
        </div>
-          
+        
+        
+        <div class="ticket">
+            <div><h2 id="nome_passeggero"></h2></div>
+            <div><h2 id="tariffa"></h2></div>
+            <div><h1 id="biglietto"></h1></div>
+        </div>
+        
+        
+       </div>
     
     
     
